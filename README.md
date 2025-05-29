@@ -56,9 +56,7 @@ The following Power BI features were incorporated
 
 ## Visualization & Analysis:
 
-![](https://github.com/rubytechme/Business-Maturity-Index-Management-Dashboard/blob/main/BMI1.png)
-
-### KPIs
+### KPIs:
 ### Total Revenue
 The portfolio achieved a total revenue of $37.18 Million, underpinned by an impressive average month-over-month (MoM) growth rate of approximately 60%. This performance clearly indicates a significant and healthy growth trajectory for the entire portfolio.
 
@@ -69,6 +67,8 @@ Across all four startups, the combined total net profit generated stands at appr
 The African ownership still remains at 100% without any dilution, 
 
 ### Overview: 
+
+![](https://github.com/rubytechme/Business-Maturity-Index-Management-Dashboard/blob/main/BMI1.png)
 
 ### Revenue by Startup
 It's evident that Startup 1 and Startup 3 are significantly outperforming Startup 2 and Startup 4 in revenue generation, despite all being relatively new ventures. This substantial discrepancy warrants immediate investigation to understand the underlying factors contributing to such divergent early-stage financial performance.
@@ -112,6 +112,7 @@ A significant majority of the startups reported that between 51% and 70% of thei
 ### Spare Capacity Utilization
 All startups possess some degree of spare capacity, though at varying rates. Notably, Startup 1 and Startup 2, both strong performers, maintain approximately 10% spare capacity, while Startup 4 holds a significantly higher 30%.
 
+## Live Dashboard:
 You can interact with the live visualization [HERE](https://app.powerbi.com/groups/me/reports/48051f89-a36b-4b97-876a-c70e292092f7/ReportSection?experience=power-bi)
 
 
@@ -119,13 +120,12 @@ You can interact with the live visualization [HERE](https://app.powerbi.com/grou
 1. Initially, my Month-over-Month (MoM) calculations were failing due to the absence of prior month's data for comparison. To resolve this, I refined the calculation logic to bypass the error using a caveat.  And thus, it now only processes MoM growth upon the first occurrence of a new month's data, ensuring accuracy and preventing erroneous calculations in initial periods.
 
 2. I also experienced a problem in calculating the percentage change for net profit. Specifically, a prior month's negative net profit, despite a substantial positive improvement two months later, skewed the percentage difference calculation due to the negative sign's influence, resulting in misleading or overly pessimistic growth figures.
-   
-To counteract this, I customized the DAX formula with a specific rule: if the previous month's value is negative and the current month's value is positive, the system now treats the change as positive, but reports a neutral sign. This ensures an accurate representation of the profit recovery without the distorting effect of the initial negative baseline.
+   To counteract this, I customized the DAX formula with a specific rule: if the previous month's value is negative and the current month's value is positive, the system now treats the change as positive, but reports a neutral sign. This ensures an accurate representation of the profit recovery without the distorting effect of the initial negative baseline.
 
-3. Initially, a straightforward comparison of spare capacity month-over-month proved challenging using a standard table format. To overcome this, I implemented a matrix transformation, pivoting the row-based month values into columns, thereby enabling a clear, side-by-side month-by-month comparison of spare capacity.
+4. Initially, a straightforward comparison of spare capacity month-over-month proved challenging using a standard table format. To overcome this, I implemented a matrix transformation, pivoting the row-based month values into columns, thereby enabling a clear, side-by-side month-by-month comparison of spare capacity.
 
 
-4. There was also a major problem in automating the workflow via the web, due to the file size (about 200 columns with long characters in it) So I ran the automation locally to successfully process the data.
+5. There was also a major problem in automating the workflow via the web, due to the file size (about 200 columns with long characters in it) So I ran the automation locally to successfully process the data.
 
 ## Conclusion and Recommendations:
 
