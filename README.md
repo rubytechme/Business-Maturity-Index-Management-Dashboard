@@ -38,7 +38,7 @@ The essence of this analysis is to track key metrics that collectively evaluate 
 - Spare Capacity Utilization
 
 
-## Skills/ concepts demonstrated:
+## Skills/Concepts Demonstrated:
 
 The following Power BI features were incorporated
 
@@ -48,7 +48,7 @@ The following Power BI features were incorporated
 - Time Intelligence
 - Dashboard Automation
 
-## Other expertise incorporated:
+## Other Expertise Incorporated:
 
 - Data Governance
 - Data Quality & Standardization 
