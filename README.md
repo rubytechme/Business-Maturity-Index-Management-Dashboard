@@ -1,6 +1,6 @@
 # Business-Maturity-Index-Management-Dashboard
 
-![](https://github.com/rubytechme/Business-Maturity-Index-Management-Dashboard/blob/main/BMI.jpg)
+![](https://github.com/rubytechme/Business-Maturity-Index-Management-Dashboard/blob/main/BMI1.png)
 
 ## Introduction:
 
